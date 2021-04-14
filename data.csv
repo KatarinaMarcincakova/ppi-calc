@@ -1,0 +1,10 @@
+empty, 0, empty
+abc, abc, abc
+empty, empty, empty
+abc̄, abc̄, abc̄
+abc̄ + abc, ab, ab
+abc̄, ab, ab
+empty, empty, empty
+abc, ab, ab
+empty, empty, empty
+ab̄c, ab̄c, ab̄c

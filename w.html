@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>PPI - Princípy počítačového inžinierstva</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div class="header" width=100%>
+        <div class=hpt1><img class=logo src=pic/logo.png></div>
+        <div class=hpt2></div>
+        <div class=hpt3>﻿ &nbsp;&nbsp;
+            <a class=white href=index.php?pid=11>Cvičenie 1</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=21>Cvičenie 2</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=31>Cvičenie 3</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=41>Cvičenie 4</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=51>Cvičenie 5</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=orange href=index.php?pid=61>Cvičenie 6</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=71>Cvičenie 7</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=81>Cvičenie 8</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=91>Cvičenie 9</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=a1>Cvičenie 10</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=b1>Cvičenie 11</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=c1>Cvičenie 12</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a class=white href=index.php?pid=d1>Cvičenie 13</a></div>
+        <div class=hpt4></div>
+    </div>
+
+    <div class="main" style="width: 100%;">
+        <div style="float: left; width: 20%;">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=61>Úloha 1 - Úplná DNF (UDNF)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=62>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class=leftmenu href=index.php?pid=63>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c, d)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=64>Úloha 2 - Skrátená DNF (SDNF)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=65>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class=leftmenu href=index.php?pid=66>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c, d)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=67>Úloha 3 - Iredundantná DNF (IDNF)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=68>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c)</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a class=leftmenu href=index.php?pid=69>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c, d)</a></p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=6a>Úloha 4 - Minimálna DNF (MDNF)</a></p>
+            <!--<p>&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=6b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c)</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a class=leftmenu href=index.php?pid=6c>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(a, b, c, d)</a></p>-->
+        </div>
+        <div style="float: left; width: 60%;">
+            <p class=orangebold><br>Kombinačné obvody</p>
+            <h1>Iredundantná disjunktívna normálna forma</h1><br>
+            <p class=orangebold>Úloha</p>
+            <p class=td0>Transformujte pravdivostnú tabuľku do podoby Iredundantnej Disjunktívnej Normálnej Formy (IDNF)<br><br></p>
+            <p class=orangebold>Riešenie</p>
+
+            <form action=index.php method=get>
+                <center>
+                    <p><br><br>Vyplňte výstupné hodnoty pre jednotlivé riadky pravdivostnej tabuľky pre jej prevod do IDNF.</p>
+
+                    <table>
+
+                        <tr>
+                            <td class=orange align=center width=25><b><i>DE</i></b></td>
+                            <td class=orange align=center width=25></td>
+                            <td class=orange align=center width=25><b><i>a</i></b></td>
+                            <td class=orange align=center width=25><b><i>b</i></b></td>
+                            <td class=orange align=center width=25><b><i>c</i></b></td>
+                            <td class=orange align=center width=25></td>
+                            <td class=orange align=center width=75><b><i>f(a, b, c)</i></b></td>
+                        </tr>
+
+                        <tr>
+                            <td align=center>0</td>
+                            <td align=center></td>
+                            <td align=center>0</td>
+                            <td align=center>0</td>
+                            <td align=center>0</td>
+                            <td align=center></td>
+                            <td align=center><select name=b0>
+<option value=0 selected>0</option>
+<option value=1>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>1</td><td align=center></td><td align=center>0</td><td align=center>0</td><td align=center>1</td><td align=center></td><td align=center><select name=b1>
+<option value=0 selected>0</option>
+<option value=1>1</option>
+<option value=x>x</option>
+</selet></td></tr></td></tr>
+<tr><td align=center>2</td><td align=center></td><td align=center>0</td><td align=center>1</td><td align=center>0</td><td align=center></td><td align=center><select name=b2>
+<option value=0>0</option>
+<option value=1 selected>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>3</td><td align=center></td><td align=center>0</td><td align=center>1</td><td align=center>1</td><td align=center></td><td align=center><select name=b3>
+<option value=0 selected>0</option>
+<option value=1>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>4</td><td align=center></td><td align=center>1</td><td align=center>0</td><td align=center>0</td><td align=center></td><td align=center><select name=b4>
+<option value=0>0</option>
+<option value=1 selected>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>5</td><td align=center></td><td align=center>1</td><td align=center>0</td><td align=center>1</td><td align=center></td><td align=center><select name=b5>
+<option value=0 selected>0</option>
+<option value=1>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>6</td><td align=center></td><td align=center>1</td><td align=center>1</td><td align=center>0</td><td align=center></td><td align=center><select name=b6>
+<option value=0>0</option>
+<option value=1 selected>1</option>
+<option value=x>x</option>
+</selet></td></tr>
+<tr><td align=center>7</td><td align=center></td><td align=center>1</td><td align=center>1</td><td align=center>1</td><td align=center></td><td align=center><select name=b7>
+<option value=0 selected>0</option>
+<option value=1>1</option>
+<option value=x selected>x</option>
+</selet></td></tr>
+
+</table>
+<br>
+<input type=hidden name=pid value=68>
+<input type=submit name=Transformuj value=Transformuj></form>
+
+<br><a class=orange href=index.php?pid=68>Vynulovať</a>
+
+<p><br><br><sup>1*</sup>Výsledok transformácie do formy UDNF:<center><p>
+
+<table background=img/km3b2.png width=240 height=80><tr><td height=30 width=20></td><td height=30 width=220></td></tr>
+<tr><td></td><td><table border=1 cellspacing=0 cellpadding=0>
+<tr><td id=td0 align=center width=54 height=23>0</td><td id=td1 align=center width=54>0</td><td id=td3 align=center width=54>0</td><td id=td2 align=center width=54>1</td></tr>
+<tr><td id=td4 align=center width=54 height=23>1</td><td id=td5 align=center width=54>0</td><td id=td7 align=center width=54>x</td><td id=td6 align=center width=54>1</td></tr>
+</table></td></tr>
+</table>
+
+<p>
+    UDNF = 
+    <span onmouseover=vysvietUDNF(2); onmouseout=vypnut()>a&#x304;bc&#x304;</span> + <span onmouseover=vysvietUDNF(4); onmouseout=vypnut()>ab&#x304;c&#x304;</span> + <span onmouseover=vysvietUDNF(6); onmouseout=vypnut()>abc&#x304;</span> <br><br><br>
+    <sup>1*</sup>Výsledok transformácie do formy SDNF:<br><br>
+    SDNF = 
+    <span onmouseover=vysviet(7); onmouseout=vypnut()>bc&#x304;</span> + <span onmouseover=vysviet(19); onmouseout=vypnut()>ac&#x304;</span> + <span onmouseover=vysviet(24); onmouseout=vypnut()>ab</span></p></center>
+
+<p><sup>1*</sup>Ak posuniete kurzor na príslušný implikant, tvoriaci SDNF, zvýrazni sa v Karnaughovej mape oranžovou farbou.</p>
+<script>
+function vysviet(par) {
+
+if (par === 1 || par === 3 || par === 4 || par === 9 || par === 10 || par === 12 || par === 13 || par === 27) document.getElementById("td0").style.backgroundColor = "#ff8000";
+if (par === 2 || par === 3 || par === 5 || par === 9 || par === 11 || par === 12 || par === 14 || par === 27) document.getElementById("td1").style.backgroundColor = "#ff8000";
+if (par === 1 || par === 6 || par === 7 || par === 9 || par === 10 || par === 15 || par === 16 || par === 27) document.getElementById("td2").style.backgroundColor = "#ff8000";
+if (par === 2 || par === 6 || par === 8 || par === 9 || par === 11 || par === 15 || par === 17 || par === 27) document.getElementById("td3").style.backgroundColor = "#ff8000";
+if (par === 1 || par === 3 || par === 4 || par === 18 || par === 19 || par === 21 || par === 22 || par === 27) document.getElementById("td4").style.backgroundColor = "#ff8000";
+if (par === 2 || par === 3 || par === 5 || par === 18 || par === 20 || par === 21 || par === 23 || par === 27) document.getElementById("td5").style.backgroundColor = "#ff8000";
+if (par === 1 || par === 6 || par === 7 || par === 18 || par === 19 || par === 24 || par === 25 || par === 27) document.getElementById("td6").style.backgroundColor = "#ff8000";
+if (par === 2 || par === 6 || par === 8 || par === 18 || par === 20 || par === 24 || par === 26 || par === 27) document.getElementById("td7").style.backgroundColor = "#ff8000";
+}
+
+function vysvietUDNF(par) {
+
+if (par === 0) document.getElementById("td0").style.backgroundColor = "#ff8000";
+if (par === 1) document.getElementById("td1").style.backgroundColor = "#ff8000";
+if (par === 2) document.getElementById("td2").style.backgroundColor = "#ff8000";
+if (par === 3) document.getElementById("td3").style.backgroundColor = "#ff8000";
+if (par === 4) document.getElementById("td4").style.backgroundColor = "#ff8000";
+if (par === 5) document.getElementById("td5").style.backgroundColor = "#ff8000";
+if (par === 6) document.getElementById("td6").style.backgroundColor = "#ff8000";
+if (par === 7) document.getElementById("td7").style.backgroundColor = "#ff8000";
+}
+
+function vypnut() {
+
+document.getElementById("td0").style.backgroundColor = "#ffffff";
+document.getElementById("td1").style.backgroundColor = "#ffffff";
+document.getElementById("td2").style.backgroundColor = "#ffffff";
+document.getElementById("td3").style.backgroundColor = "#ffffff";
+document.getElementById("td4").style.backgroundColor = "#ffffff";
+document.getElementById("td5").style.backgroundColor = "#ffffff";
+document.getElementById("td6").style.backgroundColor = "#ffffff";
+document.getElementById("td7").style.backgroundColor = "#ffffff";
+}
+
+</script>
+
+<p><br><br><sup>1*</sup>Výsledok transformácie do formy IDNF:<center><p>IDNF<sub>1</sub> = <span onmouseover=vysviet(7); onmouseout=vypnut()>bc&#x304;</span> + <span onmouseover=vysviet(19); onmouseout=vypnut()>ac&#x304;</span><br> </div>
+		<div style="float: left; width: 20%;"></div>
+	</div>
+
+</body>
+</html>
