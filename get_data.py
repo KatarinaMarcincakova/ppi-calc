@@ -49,8 +49,9 @@ def d_to_t(n):
         n = n // 3
         i -= 1
 
-data = open("data_4.csv", "w", encoding="utf8")
-for i in range(6561, 43046721, 1):
+
+for i in range(4304672):
+    data = open("d_4.csv", "a", encoding="utf8")
     b = ['0'] * 16
     d_to_t(i)
     #print(b)
@@ -59,4 +60,4 @@ for i in range(6561, 43046721, 1):
     #print(f'[URL {i}]: {url}')
     get_data(url)
 
-data.close()
+    data.close()
