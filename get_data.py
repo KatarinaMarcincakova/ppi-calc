@@ -51,7 +51,7 @@ def d_to_t(n):
 
 
 for i in range(4304672):
-    data = open("d_4.csv", "a", encoding="utf8")
+    data = open("d4.csv", "a", encoding="utf8")
     b = ['0'] * 16
     d_to_t(i)
     #print(b)
